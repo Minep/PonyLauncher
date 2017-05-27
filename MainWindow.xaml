@@ -1,0 +1,37 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MCLauncher"
+        xmlns:Custom="http://metro.mahapps.com/winfx/xaml/controls" x:Class="MCLauncher.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="539.789" Width="1071.197" WindowStartupLocation="CenterOwner" WindowStyle="None" ResizeMode="NoResize" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Window.Background>
+        <ImageBrush ImageSource="res/maxresdefault.png"/>
+    </Window.Background>
+    <Grid x:Name="g">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button" Content="关     闭" Grid.Column="1" HorizontalAlignment="Left" Margin="117,485,0,0" VerticalAlignment="Top" Width="130" Height="37" Background="{x:Null}" Foreground="White" Click="button_Click" Custom:ButtonHelper.CornerRadius="4"/>
+        <Button x:Name="button_Copy" Content="启  动  Minecraft" Grid.Column="1" HorizontalAlignment="Left" Margin="252,485,0,0" VerticalAlignment="Top" Width="130" Height="37" Background="{x:Null}" Foreground="White" Click="FakeLogin"/>
+        <DockPanel HorizontalAlignment="Left" Height="55" LastChildFill="False" Margin="308,10,0,0" VerticalAlignment="Top" Width="753" Grid.ColumnSpan="2">
+            <Button x:Name="genral" Content="通   用" Height="55" VerticalAlignment="Top" Width="150.6" Background="#4C40FF00" Foreground="White" FontSize="16" BorderThickness="2,2,0.6,2" Click="Click"/>
+            <Button x:Name="res" Content="资   源" Height="55" VerticalAlignment="Top" Width="150.6" Background="{x:Null}" Foreground="White" FontSize="16" BorderThickness="0.6,2" Click="Click"/>
+            <Button x:Name="mod_mana" Content="Mod  管  理" Height="55" VerticalAlignment="Top" Width="150.6" Background="{x:Null}" Foreground="White" FontSize="16" BorderThickness="1,2" Click="Click"/>
+            <Button x:Name="abt" Content="关    于" Height="55" VerticalAlignment="Top" Width="150.6" Background="{x:Null}" Foreground="White" FontSize="16" BorderThickness="1,2,2,2" Click="Click"/>
+            <Button x:Name="setting" Content="设  置" Height="55" VerticalAlignment="Top" Width="149" Background="{x:Null}" Foreground="White" FontSize="16" BorderThickness="1,2,2,2" Click="Click"/>
+        </DockPanel>
+        <ContentControl x:Name="CC" Content="ContentControl" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="402" Width="1051"/>
+        <Button x:Name="button2" Grid.ColumnSpan="2" Content="Button" HorizontalAlignment="Left" Height="100" Margin="513,620,0,-180" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="label" Content="Pony L" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Height="68" Width="162" Foreground="#FF4AF022" FontSize="45" FontStyle="Oblique"/>
+        <Label x:Name="label1" Content="auncher" HorizontalAlignment="Left" Margin="155,20,0,0" VerticalAlignment="Top" Foreground="#FF4AF022" FontSize="30" FontStyle="Oblique"/>
+        <Label x:Name="label2" Content="Luna Release" HorizontalAlignment="Left" Margin="215,51,0,0" VerticalAlignment="Top" Foreground="#FF4E71C6" FontStyle="Italic"/>
+        <Label x:Name="stau_lable" Content="" HorizontalAlignment="Left" Margin="10,480,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" x:FieldModifier="public" FontSize="14" Grid.ColumnSpan="2" Width="638"/>
+        <Button x:Name="button_Copy1" Content="正版启动Minecraft" Grid.Column="1" HorizontalAlignment="Left" Margin="387,485,0,0" VerticalAlignment="Top" Width="130" Height="37" Background="{x:Null}" Foreground="White" Click="purchased"/>
+        <Label x:Name="SInfo" Content="" HorizontalAlignment="Left" Margin="10,513,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="638" FontSize="10" Foreground="White"/>
+
+    </Grid>
+</Window>
