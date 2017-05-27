@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1790971-63A9-4D38-AA6C-E59A0959673E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>liblauncher</RootNamespace>
+    <AssemblyName>liblauncher</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>NullStudioKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="launcher\gameinfo.cs" />
+    <Compile Include="launcher\lcher.cs" />
+    <Compile Include="launcher\NJE.cs" />
+    <Compile Include="libs\extracts.cs" />
+    <Compile Include="libs\libraryies.cs" />
+    <Compile Include="libs\OS.cs" />
+    <Compile Include="libs\ros.cs" />
+    <Compile Include="libs\rules.cs" />
+    <Compile Include="Login\LoginInfo.cs" />
+    <Compile Include="Login\LoginThread.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="util\F_H.cs" />
+    <Compile Include="Version\VHelper.cs" />
+    <Compile Include="yggdrasil\Agent.cs" />
+    <Compile Include="yggdrasil\AuthenticationRequest.cs" />
+    <Compile Include="yggdrasil\AuthenticationResponse.cs" />
+    <Compile Include="yggdrasil\GameProfile.cs" />
+    <Compile Include="yggdrasil\NewLogin.cs" />
+    <Compile Include="yggdrasil\Response.cs" />
+    <Compile Include="zip_\Checksums\Adler32.cs" />
+    <Compile Include="zip_\Checksums\CRC32.cs" />
+    <Compile Include="zip_\Checksums\IChecksum.cs" />
+    <Compile Include="zip_\Checksums\StrangeCRC.cs" />
+    <Compile Include="zip_\Compression\Deflater.cs" />
+    <Compile Include="zip_\Compression\DeflaterConstants.cs" />
+    <Compile Include="zip_\Compression\DeflaterEngine.cs" />
+    <Compile Include="zip_\Compression\DeflaterHuffman.cs" />
+    <Compile Include="zip_\Compression\DeflaterPending.cs" />
+    <Compile Include="zip_\Compression\Inflater.cs" />
+    <Compile Include="zip_\Compression\InflaterDynHeader.cs" />
+    <Compile Include="zip_\Compression\InflaterHuffmanTree.cs" />
+    <Compile Include="zip_\Compression\PendingBuffer.cs" />
+    <Compile Include="zip_\Compression\Streams\DeflaterOutputStream.cs" />
+    <Compile Include="zip_\Compression\Streams\InflaterInputStream.cs" />
+    <Compile Include="zip_\Compression\Streams\OutputWindow.cs" />
+    <Compile Include="zip_\Compression\Streams\StreamManipulator.cs" />
+    <Compile Include="zip_\Core\FileSystemScanner.cs" />
+    <Compile Include="zip_\Core\INameTransform.cs" />
+    <Compile Include="zip_\Core\IScanFilter.cs" />
+    <Compile Include="zip_\Core\NameFilter.cs" />
+    <Compile Include="zip_\Core\PathFilter.cs" />
+    <Compile Include="zip_\Core\StreamUtils.cs" />
+    <Compile Include="zip_\Core\WindowsPathUtils.cs" />
+    <Compile Include="zip_\Encryption\PkzipClassic.cs" />
+    <Compile Include="zip_\Encryption\ZipAESStream.cs" />
+    <Compile Include="zip_\Encryption\ZipAESTransform.cs" />
+    <Compile Include="zip_\FastZip.cs" />
+    <Compile Include="zip_\IEntryFactory.cs" />
+    <Compile Include="zip_\SharpZipBaseException.cs" />
+    <Compile Include="zip_\WindowsNameTransform.cs" />
+    <Compile Include="zip_\ZipConstants.cs" />
+    <Compile Include="zip_\ZipEntry.cs" />
+    <Compile Include="zip_\ZipEntryFactory.cs" />
+    <Compile Include="zip_\ZipException.cs" />
+    <Compile Include="zip_\ZipExtraData.cs" />
+    <Compile Include="zip_\ZipFile.cs" />
+    <Compile Include="zip_\ZipHelperStream.cs" />
+    <Compile Include="zip_\ZipInputStream.cs" />
+    <Compile Include="zip_\ZipNameTransform.cs" />
+    <Compile Include="zip_\ZipOutputStream.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NullStudioKey.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

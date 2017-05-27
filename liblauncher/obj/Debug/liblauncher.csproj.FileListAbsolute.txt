@@ -1,0 +1,10 @@
+H:\SoftwPrj\MCH-PC\libs\liblauncher\liblauncher\bin\Debug\liblauncher.dll
+H:\SoftwPrj\MCH-PC\libs\liblauncher\liblauncher\bin\Debug\liblauncher.pdb
+H:\SoftwPrj\MCH-PC\libs\liblauncher\liblauncher\obj\Debug\liblauncher.dll
+H:\SoftwPrj\MCH-PC\libs\liblauncher\liblauncher\obj\Debug\liblauncher.pdb
+H:\SoftwPrj\MCH-PC\libs\liblauncher\liblauncher\obj\Debug\liblauncher.csprojResolveAssemblyReference.cache
+F:\SoftwPrj\MCH-PC\libs\liblauncher\liblauncher\obj\Debug\liblauncher.csprojResolveAssemblyReference.cache
+F:\SoftwPrj\MCH-PC\libs\liblauncher\liblauncher\obj\Debug\liblauncher.dll
+F:\SoftwPrj\MCH-PC\libs\liblauncher\liblauncher\obj\Debug\liblauncher.pdb
+F:\SoftwPrj\MCH-PC\libs\liblauncher\liblauncher\bin\Debug\liblauncher.dll
+F:\SoftwPrj\MCH-PC\libs\liblauncher\liblauncher\bin\Debug\liblauncher.pdb

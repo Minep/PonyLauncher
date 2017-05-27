@@ -1,0 +1,4 @@
+F:\SoftwPrj\liblauncher\liblauncher\bin\Release\liblauncher.dll
+F:\SoftwPrj\liblauncher\liblauncher\bin\Release\liblauncher.pdb
+F:\SoftwPrj\liblauncher\liblauncher\obj\Release\liblauncher.dll
+F:\SoftwPrj\liblauncher\liblauncher\obj\Release\liblauncher.pdb
